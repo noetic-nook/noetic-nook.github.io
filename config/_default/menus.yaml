@@ -1,0 +1,29 @@
+# Navigation Links
+#   To link a page section, specify the URL as a hash `/#` followed by the `id` of the section.
+#   The `weight` parameter defines the order that the links will appear in.
+
+main:
+  - name: Home
+    url: /#top
+    weight: 10
+  # - name: Books
+  #   url: /#book
+  #   weight: 20
+  # - name: Poems
+  #   url: /#poem
+  #   weight: 30
+  # - name: Songs
+  #   url: /#song
+  #   weight: 40
+  - name: About
+    url: about/
+    weight: 50
+  # - name: Resources
+  #   weight: 60
+  #   hasChildren: true
+  # - parent: Resources
+  #   name: Blog
+  #   url: blog/
+  # - parent: Resources
+  #   name: Author
+  #   url: authors/

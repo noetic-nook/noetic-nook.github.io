@@ -1,0 +1,63 @@
+# Hugo Blox
+# Social sharing links
+# Docs: https://docs.hugoblox.com/reference/page-sharer/
+
+links:
+  - id: instagram
+    url: 'https://www.instagram.com/noetic.nook/'
+    icon: brands/instagram
+    enable: true
+  - id: youtube
+    url: 'https://www.youtube.com/@noeticnook'
+    icon: brands/youtube
+    enable: true
+  - id: x
+    url: 'https://twitter.com/intent/tweet?url={url}&text={title}'
+    title: X
+    icon: brands/x
+    enable: false
+  - id: facebook
+    url: 'https://www.facebook.com/sharer.php?u={url}&t={title}'
+    title: Facebook
+    icon: brands/facebook
+    enable: false
+  - id: email
+    url: 'mailto:noetic.nook@gmail.com'
+    title: Email
+    icon: hero/at-symbol
+    enable: true
+  - id: linkedin
+    url: 'https://www.linkedin.com/shareArticle?url={url}&title={title}'
+    title: LinkedIn
+    icon: brands/linkedin
+    enable: false
+  - id: whatsapp
+    url: 'whatsapp://send?text={title}%20{url}'
+    title: WhatsApp
+    icon: brands/whatsapp
+    enable: false
+#  - id: weibo
+#    url: 'https://service.weibo.com/share/share.php?url={url}&title={title}'
+#    title: Weibo
+#    icon: weibo
+#    enable: true
+#  - id: reddit
+#    url: 'https://reddit.com/submit?url={url}&title={title}'
+#    title: Reddit
+#    icon: reddit-alien
+#    enable: false
+#  - id: pinterest
+#    url: 'https://pinterest.com/pin/create/link/?url={url}&description={title}'
+#    title: Pinterest
+#    icon: pinterest
+#    enable: false
+#  - id: xing
+#    url: 'https://www.xing.com/spi/shares/new?url={url}&title={title}'
+#    title: Xing
+#    icon: xing
+#    enable: false
+#  - id: tumblr
+#    url: 'https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&title={title}'
+#    title: Tumblr
+#    icon: tumblr
+#    enable: false

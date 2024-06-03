@@ -1,0 +1,1262 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: June 2, 2024 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="light">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Builder 0.2.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="吳健雄" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A highly-customizable Hugo landing page theme powered by Hugo Blox website builder." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://noeticnook.com/" />
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="/css/themes/indigo.min.css" />
+  
+
+  
+  
+    
+    <link href="/dist/wc.min.css" rel="stylesheet" />
+  
+
+  
+  
+  
+
+  
+
+  <script>
+     
+    window.hbb = {
+       defaultTheme: document.documentElement.dataset.wcThemeDefault,
+       setDarkTheme: () => {
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.colorScheme = "dark";
+      },
+       setLightTheme: () => {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.colorScheme = "light";
+      }
+    }
+
+    console.debug(`Default Hugo Blox Builder theme is ${window.hbb.defaultTheme}`);
+
+    if ("wc-color-theme" in localStorage) {
+      localStorage.getItem("wc-color-theme") === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+    } else {
+      window.hbb.defaultTheme === "dark" ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      if (window.hbb.defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? window.hbb.setDarkTheme() : window.hbb.setLightTheme();
+      }
+    }
+  </script>
+
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      let checkboxes = document.querySelectorAll('li input[type=\'checkbox\'][disabled]');
+      checkboxes.forEach(e => {
+        e.parentElement.parentElement.classList.add('task-list');
+      });
+
+      
+      const liNodes = document.querySelectorAll('.task-list li');
+      liNodes.forEach(nodes => {
+        let textNodes = Array.from(nodes.childNodes).filter(node => node.nodeType === 3 && node.textContent.trim().length > 1);
+        if (textNodes.length > 0) {
+          const span = document.createElement('label');
+          textNodes[0].after(span);  
+          span.appendChild(nodes.querySelector('input[type=\'checkbox\']'));
+          span.appendChild(textNodes[0]);
+        }
+      });
+    });
+  </script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Noetic Nook" />
+  
+
+  
+  <link rel="icon" type="image/png" href="/media/icon_hu724ac7cb9685852787b1ce9909204c6f_69420_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu724ac7cb9685852787b1ce9909204c6f_69420_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://noeticnook.com/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@GetResearchDev" />
+    <meta property="twitter:creator" content="@GetResearchDev" />
+  
+  <meta property="og:site_name" content="Noetic Nook" />
+  <meta property="og:url" content="https://noeticnook.com/" />
+  <meta property="og:title" content="Home | Noetic Nook" />
+  <meta property="og:description" content="A highly-customizable Hugo landing page theme powered by Hugo Blox website builder." /><meta property="og:image" content="https://noeticnook.com/media/logo.svg" />
+    <meta property="twitter:image" content="https://noeticnook.com/media/logo.svg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2023-10-24T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite","url": "https://noeticnook.com/"
+}
+</script>
+
+
+  
+
+
+  <title>Home | Noetic Nook</title>
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <style>
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+  </style>
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
+    
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    src="/js/hugo-blox-en.min.e5fa931947cac2d947732ea37a770aae2b5bd4a50b6048060cd129b46159a06d.js"
+    integrity="sha256-5fqTGUfKwtlHcy6jencKritb1KULYEgGDNEptGFZoG0="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+  <body class="dark:bg-hb-dark dark:text-white page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+        
+        
+          <header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-left">
+    <div class="order-0 h-100">
+      
+      <a class="navbar-brand" href="/" title="Noetic Nook">
+            
+            
+              
+              <img
+                fetchpriority="high"
+                decoding="async"
+                class=""
+                width="60"
+                height="36"
+                src="/media/noeticnooks-logo_hu724ac7cb9685852787b1ce9909204c6f_69420_0x36_resize_q95_h2_lanczos_3.webp"
+                alt="Noetic Nook" />
+            
+          
+        
+        
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-left
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/#top"
+        >Home</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/about/"
+        >About</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+
+      
+      
+      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
+            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+
+        
+      
+    </div>
+    <div class="page-body ">
+      
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    
+    
+    
+  
+  
+  
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-hero" class="relative hbb-section blox-hero  dark" style="padding: 0 0 0 0;" >
+ <div class="home-section-bg  bg-image parallax" style="background-color: navy;background-image: url(&#39;https://noeticnook.com/media/bg-triangles.svg&#39;);filter: brightness(0.5);">
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+<div class="relative isolate px-6 pt-14 lg:px-8">
+
+  <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+
+    
+    
+    <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+      <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 dark:ring-gray-300 hover:ring-gray-900/20 dark:hover:ring-gray-400">
+         <a href="https://www.amazon.com/author/parveen.minocha" class="font-semibold text-primary-600 dark:text-primary-300"><span class="absolute inset-0" aria-hidden="true"></span>Announcing the release of Children&#39;s Books <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    
+
+    <div class="text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-6xl">Noetic Nook</h1>
+      <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">A simply creative company</p>
+
+      
+
+        
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="book" class="relative hbb-section blox-cta-image-paragraph  bg-gray-100 dark:bg-gray-900" style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+<div>
+  
+  
+  
+  
+  
+  
+    
+  
+  <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    <img class="w-full" src="/media/noeticnook-book_hu6dfacccd32e4ec407f0e4de17d1f8232_98259_800x0_resize_q95_h2_lanczos_3.webp" alt="Books" style="order: 1">
+    <div class="mt-4 md:mt-0">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Books</h2>
+      <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Collection of children&rsquo;s books</p>
+      
+      
+      <ul>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75L12 13.5z"/></svg>
+          Chumbak: nanhe-munno ke liye kavitaayein
+        </li>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75L12 13.5z"/></svg>
+          Madhuban: Sundar Pashu-Pakshi Es Dharti Par
+        </li>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75L12 13.5z"/></svg>
+          My First OM
+        </li>
+        
+      </ul>
+      
+      
+      <a href="https://www.amazon.com/author/parveen.minocha" class="mt-3 inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+        Buy Now
+        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </a>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+    
+  
+  <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    <img class="w-full" src="/media/noeticnook-poem_hu67a35a661425c7eb2aa890776c03ea2c_112830_800x0_resize_q95_h2_lanczos_3.webp" alt="Poems" >
+    <div class="mt-4 md:mt-0">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Poems</h2>
+      <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">For your intellect</p>
+      
+      
+      <ul>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4.5 12.75l6 6l9-13.5"/></svg>
+          Hindi Ki Bindi
+        </li>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4.5 12.75l6 6l9-13.5"/></svg>
+          The Artic Cold
+        </li>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m4.5 12.75l6 6l9-13.5"/></svg>
+          Poetry-Doha Jugalbandi
+        </li>
+        
+      </ul>
+      
+      
+      <a href="https://www.youtube.com/@noeticnook" class="mt-3 inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900">
+        Watch More
+        <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </a>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+    
+  
+  <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    <img class="w-full" src="/media/noeticnook-songs_hud994d3ce8db8e2840d97278c7b5916a8_101025_800x0_resize_q95_h2_lanczos_3.webp" alt="Songs" style="order: 1">
+    <div class="mt-4 md:mt-0">
+      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Songs</h2>
+      <p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">Coming Soon</p>
+      
+      
+      <ul>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75L12 13.5z"/></svg>
+          Mann Ke Andar
+        </li>
+        
+        <li class="relative mb-4 pl-6">
+          <svg class="inline-block pr-3" style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75L12 13.5z"/></svg>
+          Teri Yaad
+        </li>
+        
+      </ul>
+      
+      
+    </div>
+  </div>
+  
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-testimonials" class="relative hbb-section blox-testimonials  " style="padding: 6rem 0 0 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+<section>
+  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+
+    
+
+    
+    <div class="max-w-screen-md mx-auto ">
+      <svg class="h-16 mx-auto mb-3 text-gray-400 dark:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32">
+        <path d="M9.563 8.469l-0.813-1.25c-5.625 3.781-8.75 8.375-8.75 12.156 0 3.656 2.688 5.375 4.969 5.375 2.875 0 4.906-2.438 4.906-5 0-2.156-1.375-4-3.219-4.688-0.531-0.188-1.031-0.344-1.031-1.25 0-1.156 0.844-2.875 3.938-5.344zM21.969 8.469l-0.813-1.25c-5.563 3.781-8.75 8.375-8.75 12.156 0 3.656 2.75 5.375 5.031 5.375 2.906 0 4.969-2.438 4.969-5 0-2.156-1.406-4-3.313-4.688-0.531-0.188-1-0.344-1-1.25 0-1.156 0.875-2.875 3.875-5.344z"/>
+      </svg>
+      <blockquote>
+        <p class="text-2xl font-medium text-gray-900 dark:text-white">"Great phonics book to teach animal sounds for the new generation kids who are living in the age of Hindi, English and Hinglish (Hindi written in English). The book has cute illustrations too! It is a great hit with my 3 year old nephew. Would recommend this book as a fun way to introduce Hindi and English translations to your child."</p>
+      </blockquote>
+      <div class="flex items-center justify-center mt-6 space-x-3">
+        
+        
+        
+        <img class="w-12 h-12 rounded-full" src="/media/testimonial-1_hu3c64bd0f98018e2d901b7c60447ac42e_1387900_75x75_fill_q95_h2_lanczos_center.webp" alt="Garima Chotani">
+        
+        <div class="flex flex-col items-center">
+          <div class="pr-3 font-medium text-gray-900 dark:text-white">Garima Chotani</div>
+          <div class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Marketing Executive at X</div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+
+  
+
+  
+</section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="section-cta-button-list" class="relative hbb-section blox-cta-button-list  " style="padding: 6rem 0 6rem 0;" >
+ <div class="home-section-bg " >
+   
+ </div>
+  
+
+  
+
+    
+
+
+
+
+
+
+
+<div class="flex items-center flex-col mx-auto w-full justify-center mt-4 px-8 pb-5">
+
+
+  <a href="https://www.amazon.com/author/parveen.minocha" target="_blank" rel="noopener noreferrer" class="flex items-center p-1 w-full rounded-md hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl">
+  <div class="flex text-center w-full">
+    <div class="w-10 h-10 text-gray-700">
+      
+        <svg height="40" width="40" class="rounded-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="50px" height="50px"><g fill="#374151" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25.3125,3c-6.10156,0 -12.82031,2.3125 -14.21875,9.8125c-0.19922,0.80078 0.40625,1.17969 0.90625,1.28125l6.1875,0.59375c0.60156,0 1.01953,-0.58594 1.21875,-1.1875c0.5,-2.60156 2.69531,-3.90625 5.09375,-3.90625c1.30078,0 2.79297,0.51953 3.59375,1.71875c0.89844,1.30078 0.71875,3.09375 0.71875,4.59375v0.90625c-3.69922,0.39844 -8.5,0.6875 -12,2.1875c-4,1.69922 -6.8125,5.20703 -6.8125,10.40625c0,6.60156 4.19922,9.90625 9.5,9.90625c4.5,0 7,-1.11719 10.5,-4.71875c1.19922,1.69922 1.58594,2.51172 3.6875,4.3125c0.5,0.30078 1.10156,0.17969 1.5,-0.21875v0.125c1.30078,-1.10156 3.60547,-3.21094 4.90625,-4.3125c0.5,-0.30078 0.39844,-1 0,-1.5c-1.19922,-1.60156 -2.40625,-2.90625 -2.40625,-5.90625v-9.90625c0,-4.19922 0.32031,-8.10156 -2.78125,-11c-2.5,-2.39844 -6.49219,-3.1875 -9.59375,-3.1875zM27,22h1.6875v1.40625c0,2.39844 0.10547,4.48828 -1.09375,6.6875c-1,1.80078 -2.60547,2.90625 -4.40625,2.90625c-2.39844,0 -3.875,-1.79297 -3.875,-4.59375c0,-4.69922 3.6875,-6.10547 7.6875,-6.40625zM44.59375,36.59375c-1.60156,0 -3.50781,0.40625 -4.90625,1.40625c-0.39844,0.30078 -0.375,0.6875 0.125,0.6875c1.60156,-0.19922 5.17578,-0.67969 5.875,0.21875c0.60156,0.80078 -0.67969,4.17969 -1.28125,5.78125c-0.19922,0.5 0.19531,0.61328 0.59375,0.3125c2.69922,-2.30078 3.40625,-6.99219 2.90625,-7.59375c-0.30078,-0.5 -1.71094,-0.8125 -3.3125,-0.8125zM2.1875,37.5c-0.30078,0 -0.49219,0.51172 -0.09375,0.8125c6,5.39844 13.91406,8.6875 22.8125,8.6875c6.30078,0 13.58594,-1.98828 18.6875,-5.6875c0.80078,-0.60156 0.11328,-1.61719 -0.6875,-1.21875c-5.69922,2.39844 -11.80469,3.59375 -17.40625,3.59375c-8.30078,0 -16.3125,-2.30078 -22.8125,-6c-0.19922,-0.19922 -0.39844,-0.1875 -0.5,-0.1875z"></path></g></g></svg>
+      
+    </div>
+    <div class="flex justify-center items-center font-semibold w-full text-gray-700 -ml-10">
+      Checkout collection of children’s books
+    </div>
+    </div>
+  </a>
+
+  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="flex items-center p-1 w-full rounded-md hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl">
+  <div class="flex text-center w-full">
+    <div class="w-10 h-10 text-gray-700">
+      
+        <svg height="40" width="40" class="rounded-sm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104l.022.26l.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105l-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006l-.087-.004l-.171-.007l-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103l.003-.052l.008-.104l.022-.26l.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007l.172-.006l.086-.003l.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>
+      
+    </div>
+    <div class="flex justify-center items-center font-semibold w-full text-gray-700 -ml-10">
+      Watch poems for intellect
+    </div>
+    </div>
+  </a>
+
+
+</div>
+
+
+  
+
+  
+</section>
+
+  
+
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+<p class="text-center">
+  
+  <a href="/privacy/">Privacy</a>
+  
+  
+   &middot; 
+  <a href="/terms/">Terms of Service</a>
+  
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by text-center">
+    Copyright ©️ 2023 by Noetic Nook, LLC. All rights reserved.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by text-center">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
